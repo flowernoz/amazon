@@ -1,0 +1,24 @@
+.Carousel {
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+  backdrop-filter: grayscale(30%);
+}
+.carouselImg {
+  user-select: none;
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+
+.Carousel .overlay {
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  top: 300px;
+  left: 0;
+  z-index: 11;
+  background: linear-gradient(to bottom, #f8fafa12 10%, #f8fafa65 20%, #eaededc6 30%, #eaededfa 100%);
+}

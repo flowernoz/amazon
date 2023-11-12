@@ -1,0 +1,14 @@
+.HomePageCard {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  z-index: 30;
+  width: 100%;
+  flex-wrap: wrap;
+  position:absolute;
+  transform: translateY(-330px);
+  padding: 0 1%;
+}
+
+.HomePageCard a:hover .cardLink {
+  color: crimson;
+}

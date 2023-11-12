@@ -1,0 +1,32 @@
+.navbar {
+  width: 100%;
+}
+
+.location {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.searchbar :focus {
+  border: 3px solid hsl(34, 99%, 70%);
+}
+
+.faBars {
+  font-size: 22px;
+}
+header a, header button {
+  border: 1.5px solid transparent;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  font-weight: bold;
+}
+header a:hover ,  header button:hover:not(.searchIcon){
+    border-color: #fff;
+}
+
+.basket, .logo{
+    padding: 4px;
+}
