@@ -10,7 +10,7 @@ export const cartSlice = createSlice({
   initialState,
   reducers: {
     addToCart: (state, action) => {
-      // check if in product array
+      // check if in product arraya
       const addProductExists = state.products.find(
         (product) => product.id === action.payload.id
       );

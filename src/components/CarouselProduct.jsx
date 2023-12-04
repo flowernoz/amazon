@@ -6,11 +6,15 @@ import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import "swiper/css/pagination";
 
-const CarouselProduct = ({data, title}) => {
+const CarouselProduct = ({ data, title }) => {
   return (
     <div className="bg-white pb-4 m-3 ">
-      <div className="text-2xl font-semibold p-3">{ title}</div>
+      <div className="text-2xl font-semibold p-3">{title}</div>
       <Swiper
+        style={{
+          "--swiper-navigation-color": "#333",
+          "--swiper-navigation-background-color": "#000",
+        }}
         slidesPerView={1}
         centeredSlides={false}
         slidesPerGroupSkip={1}
@@ -31,11 +35,8 @@ const CarouselProduct = ({data, title}) => {
       >
         {data.map((img, i) => (
           <SwiperSlide key={i}>
-            <Link  to={`/product/${i}`}>
-              <img className="mb-4"
-                src={img}
-                alt="Carousel product"
-              />
+            <Link to={`/product/${i}`}>
+              <img className="mb-4" src={img} alt="Carousel product" />
             </Link>
           </SwiperSlide>
         ))}
@@ -45,5 +46,3 @@ const CarouselProduct = ({data, title}) => {
 };
 
 export default CarouselProduct;
-
-

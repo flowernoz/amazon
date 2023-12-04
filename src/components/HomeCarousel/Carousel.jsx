@@ -1,12 +1,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper";
+import { Autoplay } from "swiper";
 import swiper1 from "../../assets/homecarousel/swiper1.jpg";
 import swiper2 from "../../assets/homecarousel/swiper2.jpg";
 import swiper3 from "../../assets/homecarousel/swiper3.jpg";
 import swiper4 from "../../assets/homecarousel/swiper4.jpg";
 import swiper5 from "../../assets/homecarousel/swiper5.jpg";
 import "swiper/css";
-import "swiper/css/navigation";
 import "./Carousel.css";
 import { Link } from "react-router-dom";
 
@@ -17,8 +16,7 @@ const Carousel = () => {
       <Swiper
         loop={true}
         spaceBetween={0}
-        navigation={true}
-        modules={[Navigation, Autoplay]}
+        modules={[Autoplay]}
         autoplay={{
           delay: 3000,
         }}
